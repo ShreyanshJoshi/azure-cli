@@ -30,7 +30,7 @@ def show_container(cmd, client, name, resource_group_name, vault_name, backup_ma
         if container_type and container_type.lower() == "azurestorage":
             raise InvalidArgumentValueError(
                 """
-                --use-secondary-region flag is not supported for container of type AzureStorage.
+                --use-secondary-region flag is not supported for container of type AzureStorage. Random_stuff
                 Please either remove the flag or query for any other container type.
                 """)
 
